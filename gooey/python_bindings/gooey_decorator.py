@@ -60,7 +60,7 @@ def Gooey(f=None,
 
       if dump_build_config:
         config_path = os.path.join(os.getcwd(), 'gooey_config.json')
-        print 'Writing Build Config to: {}'.format(config_path)
+        print('Writing Build Config to: {}'.format(config_path))
         with open(config_path, 'w') as f:
           f.write(json.dumps(build_spec, indent=2))
       application.run(build_spec)
